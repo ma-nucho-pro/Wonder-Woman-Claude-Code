@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wonder Woman Judge Verdict",
+  "type": "object",
+  "required": [
+    "judge",
+    "verdict",
+    "critical_findings"
+  ],
+  "properties": {
+    "judge": {
+      "type": "string"
+    },
+    "verdict": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "NOT_APPLICABLE"
+      ]
+    },
+    "critical_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim_id",
+          "problem",
+          "required_action"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string"
+          },
+          "problem": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "required_action": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

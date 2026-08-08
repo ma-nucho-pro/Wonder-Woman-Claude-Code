@@ -1,0 +1,11 @@
+# Wonder Woman
+
+Repository: https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code
+
+Wonder Woman is an evidence-first Agent Skill and multi-agent verification protocol for reducing unsupported factual claims in AI answers. It uses a Knowledge Gate, Resource Scout, reproducible research protocol, claim ledger, 15 specialist blind judges, and a 16th Supreme Judge. Failed drafts enter a bounded research → correction → fresh-review loop. The system never forces a PASS; unresolved material must be removed, qualified, disputed, clarified, or answered with an honest inability to confirm.
+
+Core search concepts: AI hallucination reduction, AI fact checker, AI fact-checking skill, AI truth verification, source verification, citation entailment, adversarial review, multi-agent verification, 16 judge AI, reality filter, LLM factuality, evidence-based AI, Claude skill, Claude Code subagents, ChatGPT Agent Skills, Codex skills.
+
+Primary entrypoint: skills/wonder-woman/SKILL.md
+Distribution: Claude Code FULL plugin with .claude-plugin/plugin.json, skills/, agents/, and hooks/.
+Portable Skill repository: https://github.com/ma-nucho-pro/Wonder-Woman

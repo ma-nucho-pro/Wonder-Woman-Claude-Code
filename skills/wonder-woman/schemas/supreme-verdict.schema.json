@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Wonder Woman Supreme Verdict",
+  "type": "object",
+  "required": [
+    "judge",
+    "release_state",
+    "verification_score",
+    "hard_blockers",
+    "failed_claims"
+  ],
+  "properties": {
+    "judge": {
+      "const": "Supreme Judge"
+    },
+    "release_state": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "CLARIFY",
+        "SAFE_ABSTENTION"
+      ]
+    },
+    "verification_score": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "hard_blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "failed_claims": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "release_notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

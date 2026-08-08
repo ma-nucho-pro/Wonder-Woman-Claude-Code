@@ -1,0 +1,18 @@
+{
+  "name": "wonder-woman",
+  "version": "0.3.0",
+  "description": "Multi-agent adversarial verification skill with a 16-judge evidence-gated release tribunal.",
+  "core_skill": "skills/wonder-woman/SKILL.md",
+  "bootstrap_skill": "skills/using-wonder-woman/SKILL.md",
+  "judge_count": 16,
+  "first_stage_judge_count": 15,
+  "supreme_judge_count": 1,
+  "max_verification_rounds": 5,
+  "full_mode_requires_independent_model_calls": true,
+  "judges_directory": "skills/wonder-woman/judges",
+  "protocols_directory": "skills/wonder-woman/protocols",
+  "schemas_directory": "skills/wonder-woman/schemas",
+  "repository": "https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code",
+  "reproducible_research_protocol": "skills/wonder-woman/protocols/research-reproducibility.md",
+  "claude_code_plugin_agents_directory": "agents"
+}

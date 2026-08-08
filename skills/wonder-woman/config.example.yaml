@@ -1,0 +1,54 @@
+version: 3
+skill: wonder-woman
+
+mode:
+  full_requires_independent_model_calls: true
+  degraded_mode_allowed: true
+  never_claim_full_mode_without_real_subagents: true
+
+verification:
+  max_verification_rounds: 5
+  dispatch_mode: parallel_when_possible
+  fresh_judges_on_retry: true
+  blind_first_stage_judges: true
+  supreme_judge_sees_all_verdicts: true
+  required_first_stage_judges: 15
+  required_supreme_judges: 1
+
+research:
+  knowledge_gate: required
+  resource_scout: required
+  researcher_calls: as_needed
+  high_impact_independent_research_paths: preferred
+  reproducible_research_protocol: required
+  deduplicate_dependent_sources: true
+  contrary_evidence_path_for_material_claims: preferred
+
+public_facts:
+  fresh_external_verification_when_available: required_for_material_claims
+  prefer_primary_sources: true
+  current_topics_require_fresh_sources: true
+
+release_gate:
+  minimum_verification_score: 95
+  critical_fail_allowed: false
+  unsupported_major_claim_allowed: false
+  unresolved_material_contradiction_allowed: false
+  fabricated_or_unopened_citation_allowed: false
+  safe_abstention_allowed: true
+  clarify_allowed: true
+
+labels:
+  verified: "[VERIFIED]"
+  supported: "[SUPPORTED]"
+  inference: "[INFERENCE]"
+  speculation: "[SPECULATION]"
+  unverified: "[UNVERIFIED]"
+  disputed: "[DISPUTED]"
+  outdated: "[OUTDATED]"
+
+user_facing:
+  expose_internal_judge_transcripts: false
+  expose_chain_of_thought: false
+  show_sources_for_material_claims: true
+  show_calculation_method_for_material_numbers: true

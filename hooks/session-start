@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+# Wonder Woman session-start bootstrap injector.
+# Integration shape adapted from the MIT-licensed obra/superpowers hook architecture.
+
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+PLUGIN_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+BOOTSTRAP_FILE="${PLUGIN_ROOT}/skills/using-wonder-woman/SKILL.md"
+
+if [ ! -f "$BOOTSTRAP_FILE" ]; then
+  echo "Wonder Woman bootstrap missing: $BOOTSTRAP_FILE" >&2
+  exit 1
+fi
+
+bootstrap_content=$(cat "$BOOTSTRAP_FILE")
+
+escape_for_json() {
+    local s="$1"
+    s="${s//\\/\\\\}"
+    s="${s//\"/\\\"}"
+    s="${s//$'\n'/\\n}"
+    s="${s//$'\r'/\\r}"
+    s="${s//$'\t'/\\t}"
+    printf '%s' "$s"
+}
+
+escaped=$(escape_for_json "$bootstrap_content")
+session_context="<EXTREMELY_IMPORTANT>\nWonder Woman verification is active. The bootstrap skill below is already loaded. Do not try to load using-wonder-woman again; use the wonder-woman skill for the tribunal.\n\n${escaped}\n</EXTREMELY_IMPORTANT>"
+
+if [ -n "${CURSOR_PLUGIN_ROOT:-}" ]; then
+  printf '{\n  "additional_context": "%s"\n}\n' "$session_context"
+elif [ -n "${CLAUDE_PLUGIN_ROOT:-}" ] && [ -z "${COPILOT_CLI:-}" ]; then
+  printf '{\n  "hookSpecificOutput": {\n    "hookEventName": "SessionStart",\n    "additionalContext": "%s"\n  }\n}\n' "$session_context"
+else
+  printf '{\n  "additionalContext": "%s"\n}\n' "$session_context"
+fi

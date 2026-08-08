@@ -1,0 +1,19 @@
+{
+  "name": "wonder-woman",
+  "version": "0.3.0",
+  "description": "A verification-first multi-agent skill with 16 judges and an evidence-gated release loop.",
+  "author": {
+    "name": "Wonder Woman Project"
+  },
+  "keywords": [
+    "ai-verification",
+    "hallucination-reduction",
+    "fact-checking",
+    "multi-agent",
+    "truth",
+    "reality-filter",
+    "adversarial-review"
+  ],
+  "skills": "./skills/",
+  "hooks": {}
+}
