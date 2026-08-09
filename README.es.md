@@ -9,6 +9,9 @@
 **Plugin multiagente de verificación con 16 jueces para Claude Code.**  
 Wonder Woman investiga, cuestiona, contrasta, intenta refutar y vuelve a revisar las afirmaciones factuales **antes de que lleguen al usuario**.
 
+**Creado por [ARKEA AI](https://github.com/ma-nucho-pro) — Roberto Manuel Jara Peche**  
+[GitHub](https://github.com/ma-nucho-pro) · [Instagram](https://www.instagram.com/robertmanuchojp/) · [YouTube](https://www.youtube.com/@ManuchoAI) · [LinkedIn](https://www.linkedin.com/in/roberto-manuel-jara-peche-10867240b/)
+
 **[Descargar ZIP](https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code/archive/refs/heads/main.zip)** ·
 **[Releases](https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code/releases)** ·
 **[Instalar](#instalación-en-60-segundos)** ·
@@ -227,6 +230,27 @@ Para la versión portable de Agent Skill usa:
 **https://github.com/ma-nucho-pro/Wonder-Woman**
 
 No subas todo este plugin de Claude Code como si fuera una Skill normal de Claude o ChatGPT.
+
+---
+
+## Creador, licencia y créditos
+
+**Wonder Woman para Claude Code fue creado por ARKEA AI y Roberto Manuel Jara Peche.**
+
+- Creador: **Roberto Manuel Jara Peche**
+- Organización: **ARKEA AI**
+- GitHub: https://github.com/ma-nucho-pro
+- Instagram: https://www.instagram.com/robertmanuchojp/
+- YouTube: https://www.youtube.com/@ManuchoAI
+- LinkedIn: https://www.linkedin.com/in/roberto-manuel-jara-peche-10867240b/
+
+Wonder Woman es software de código abierto bajo **Apache License 2.0**. Puedes usar, modificar y redistribuir el proyecto —también comercialmente— cumpliendo los términos de la licencia. Las redistribuciones deben conservar los avisos aplicables de licencia, copyright y atribución descritos en [`LICENSE`](LICENSE) y [`NOTICE`](NOTICE). Los avisos de terceros están en [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+Si Wonder Woman te ayuda, se agradecen una estrella en GitHub y compartir el repositorio oficial. La licencia define la atribución obligatoria; seguir redes sociales o dar una estrella nunca es una condición de uso.
+
+> **Nota de marca:** Apache-2.0 licencia el software; no concede derechos de marca. El nombre ARKEA AI y el material gráfico original del proyecto no quedan licenciados como marcas por la licencia de software.
+
+Consulta también [`AUTHORS.md`](AUTHORS.md).
 
 ---
 

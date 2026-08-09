@@ -9,10 +9,14 @@
 **A 16-judge, multi-agent verification plugin for Claude Code.**  
 Wonder Woman researches, challenges, cross-checks, falsifies, and re-verifies factual answers **before they reach the user**.
 
+**Created by [ARKEA AI](https://github.com/ma-nucho-pro) — Roberto Manuel Jara Peche**  
+[GitHub](https://github.com/ma-nucho-pro) · [Instagram](https://www.instagram.com/robertmanuchojp/) · [YouTube](https://www.youtube.com/@ManuchoAI) · [LinkedIn](https://www.linkedin.com/in/roberto-manuel-jara-peche-10867240b/)
+
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-plugin-blueviolet)](https://code.claude.com/docs/en/plugins)
 [![Judges](https://img.shields.io/badge/judges-16-brightgreen)](#the-16-judge-tribunal)
 [![Review](https://img.shields.io/badge/review-adversarial-blue)](#how-it-works)
 [![Policy](https://img.shields.io/badge/policy-evidence%20%3E%20confidence-orange)](#core-rules)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 **[Download ZIP](https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code/archive/refs/heads/main.zip)** ·
 **[Releases](https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code/releases)** ·
@@ -408,6 +412,27 @@ The draft returns to research and correction, then fresh reviewers evaluate it a
 ### Is this the same ZIP I upload to claude.ai Skills or ChatGPT Skills?
 
 No. This is the Claude Code FULL plugin. Use the portable Wonder Woman Skill distribution from the main repository for normal Skill upload interfaces.
+
+---
+
+## Creator, license, and credits
+
+**Wonder Woman for Claude Code was created by ARKEA AI and Roberto Manuel Jara Peche.**
+
+- Creator: **Roberto Manuel Jara Peche**
+- Organization: **ARKEA AI**
+- GitHub: https://github.com/ma-nucho-pro
+- Instagram: https://www.instagram.com/robertmanuchojp/
+- YouTube: https://www.youtube.com/@ManuchoAI
+- LinkedIn: https://www.linkedin.com/in/roberto-manuel-jara-peche-10867240b/
+
+Wonder Woman is open-source software licensed under the **Apache License 2.0**. You may use, modify, and redistribute the project under the terms of that license, including commercial use. Redistributions must preserve the applicable license, copyright, and attribution notices described in [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE). Third-party notices are documented in [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md).
+
+If Wonder Woman helps your work, a GitHub star and sharing the official repository are appreciated. The license governs required attribution; stars, follows, and social mentions are never a condition of use.
+
+> **Branding note:** Apache-2.0 licenses the software; it does not grant trademark rights. The ARKEA AI name and original project artwork are not licensed as trademarks by the software license.
+
+See also [`AUTHORS.md`](AUTHORS.md).
 
 ---
 

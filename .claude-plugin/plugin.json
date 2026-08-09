@@ -3,7 +3,7 @@
   "description": "Wonder Woman: 16-judge evidence-first truth verification with real Claude Code subagents, adversarial review, source auditing, and bounded re-verification loops.",
   "version": "0.3.0",
   "author": {
-    "name": "ma-nucho-pro"
+    "name": "Roberto Manuel Jara Peche / ARKEA AI"
   },
   "keywords": [
     "skills",
@@ -16,5 +16,6 @@
     "adversarial-review"
   ],
   "homepage": "https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code",
-  "repository": "https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code"
+  "repository": "https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code",
+  "license": "Apache-2.0"
 }

@@ -21,6 +21,7 @@ def check(name, condition, detail=""):
 # Required structure
 required = [
     ROOT / "README.md", ROOT / "INSTALL.md", ROOT / "manifest.json",
+    ROOT / "LICENSE", ROOT / "NOTICE", ROOT / "AUTHORS.md",
     SKILL / "SKILL.md", BOOT,
     SKILL / "references" / "orchestration.md",
     SKILL / "references" / "harness-contract.md",
@@ -158,6 +159,11 @@ for p in plugin_agents:
 check("logo-present", (ROOT / "assets" / "wonder-woman-logo.png").exists())
 check("repository-in-readme", "https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code" in (ROOT / "README.md").read_text())
 check("reproducible-research", "research-reproducibility.md" in (SKILL / "SKILL.md").read_text())
+check("apache-license", "Apache License" in (ROOT / "LICENSE").read_text() and "Version 2.0" in (ROOT / "LICENSE").read_text())
+check("notice-attribution", "Roberto Manuel Jara Peche / ARKEA AI" in (ROOT / "NOTICE").read_text())
+claude_plugin = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text())
+check("plugin-license-apache", claude_plugin.get("license") == "Apache-2.0", str(claude_plugin.get("license")))
+check("plugin-author-arkea", claude_plugin.get("author", {}).get("name") == "Roberto Manuel Jara Peche / ARKEA AI", str(claude_plugin.get("author")))
 
 failed = [x for x in checks if not x[1]]
 print(f"\n{len(checks)-len(failed)}/{len(checks)} checks passed")

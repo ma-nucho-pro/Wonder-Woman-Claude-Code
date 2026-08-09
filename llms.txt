@@ -9,3 +9,7 @@ Core search concepts: AI hallucination reduction, AI fact checker, AI fact-check
 Primary entrypoint: skills/wonder-woman/SKILL.md
 Distribution: Claude Code FULL plugin with .claude-plugin/plugin.json, skills/, agents/, and hooks/.
 Portable Skill repository: https://github.com/ma-nucho-pro/Wonder-Woman
+
+Creator: Roberto Manuel Jara Peche / ARKEA AI
+License: Apache-2.0
+Official repository: https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code

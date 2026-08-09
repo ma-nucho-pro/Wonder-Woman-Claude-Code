@@ -109,6 +109,19 @@ class PackageTests(unittest.TestCase):
         self.assertIn("assets/wonder-woman-logo.png", readme)
         self.assertIn("https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code", readme)
 
+    def test_license_and_attribution(self):
+        self.assertTrue((ROOT / "LICENSE").exists())
+        self.assertTrue((ROOT / "NOTICE").exists())
+        self.assertTrue((ROOT / "AUTHORS.md").exists())
+        license_text = (ROOT / "LICENSE").read_text()
+        notice = (ROOT / "NOTICE").read_text()
+        plugin = json.loads((ROOT / ".claude-plugin" / "plugin.json").read_text())
+        self.assertIn("Apache License", license_text)
+        self.assertIn("Version 2.0", license_text)
+        self.assertIn("Roberto Manuel Jara Peche / ARKEA AI", notice)
+        self.assertEqual(plugin.get("license"), "Apache-2.0")
+        self.assertEqual(plugin.get("author", {}).get("name"), "Roberto Manuel Jara Peche / ARKEA AI")
+
 
     def test_agent_skill_frontmatter_constraints(self):
         import re

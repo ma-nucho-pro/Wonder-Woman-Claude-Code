@@ -14,5 +14,8 @@
   "schemas_directory": "skills/wonder-woman/schemas",
   "repository": "https://github.com/ma-nucho-pro/Wonder-Woman-Claude-Code",
   "reproducible_research_protocol": "skills/wonder-woman/protocols/research-reproducibility.md",
-  "claude_code_plugin_agents_directory": "agents"
+  "claude_code_plugin_agents_directory": "agents",
+  "author": "Roberto Manuel Jara Peche / ARKEA AI",
+  "license": "Apache-2.0",
+  "copyright": "Copyright 2026 Roberto Manuel Jara Peche / ARKEA AI"
 }
