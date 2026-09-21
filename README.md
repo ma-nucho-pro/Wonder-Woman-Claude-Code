@@ -4,6 +4,10 @@
 </p>
 <!-- manucho-readme-banner:end -->
 
+<p align="center">
+  <img src="assets/readme/project-logo.svg" width="240" alt="Wonder Woman Claude Code 3D project logo">
+</p>
+
 <div align="center">
 
 # Wonder Woman for Claude Code
