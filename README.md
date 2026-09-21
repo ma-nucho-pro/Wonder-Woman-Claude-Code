@@ -1,6 +1,10 @@
-<div align="center">
+<!-- manucho-readme-banner:start -->
+<p align="center">
+  <img src="assets/readme/banner.svg" alt="WONDER WOMAN CLAUDE CODE project overview" width="100%">
+</p>
+<!-- manucho-readme-banner:end -->
 
-<img src="assets/wonder-woman-logo.png" alt="Wonder Woman — Claude Code truth verification plugin" width="300">
+<div align="center">
 
 # Wonder Woman for Claude Code
 
